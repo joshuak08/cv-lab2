@@ -44,7 +44,7 @@ def GaussianBlur(input, size):
 		kernelRadiusX, kernelRadiusX, kernelRadiusY, kernelRadiusY, 
 		cv2.BORDER_REPLICATE)
 
-	# now we can do the convoltion
+	# now we can do the convolution
 	for i in range(0, input.shape[0]):	
 		for j in range(0, input.shape[1]):
 			patch = paddedInput[i:i+kernel.shape[0], j:j+kernel.shape[1]]
